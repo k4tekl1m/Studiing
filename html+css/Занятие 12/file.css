@@ -1,0 +1,13 @@
+.block{
+    margin: auto;
+    width: 600px;
+    height: 15px;
+    background-image: url('bleklyj_krasnyj_fon_65809_2560x1024.jpg');
+    background-position: 100% 50%;
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    transition: 0.7s;
+}
+.text:hover .block{
+    background-position: 0 100%;
+}

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    width: 300px;
+    margin: auto;
+}
+form input, select, button{
+    width: 100%;
+    margin-bottom: 10px;
+}
+h3{
+    margin-top: 30px;
+    text-align: center;
+}
+#bodyColors{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    width: 1000px;
+}
+#errorNameColor, #errorCodeColor{
+    /* color: rgb(177, 82, 82); */
+    color: #E70F0F;
+    text-align: end;
+}
+/* #cardColor{
+    width: 300px;
+    height: 180px; */
+    /* background-color: aqua; */
+    /* padding: 40px 60px;
+} */
+.mateGlass{
+    background-color: rgba(255, 255, 255, 0.642);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    height: 100px;
+    padding: 10px;
+}

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .container{
+    border: 1px solid black;
+}
+.block{
+    width: 300px;
+    border: 2px solid red;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+span{
+    background-color: yellow;
+    padding: 10px;
+    margin: 20px;
+    display: inline;
+}
+p{
+    line-height: 170%;
+
+} */
+.menu{
+    background-color: antiquewhite;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 20px;
+    border-right: 1px solid gray;
+    margin: 0;
+}
+.menu ul li:hover{
+    background-color: rgb(185, 185, 36);
+}
+@media screen and (max-width: 500px){
+    .menu ul li{
+        display: block;
+        background-color: rgb(42, 165, 128);
+    }
+}
+/* @media print{
+    p{
+        font-size: 18px;
+    }
+    hi{
+        font-size: 18px;
+    }
+}
+запрос для печати */
+@media screen and (max-width: 515px){
+    .menu ul li{
+        display: block;
+        background-color: brown;
+    }
+}

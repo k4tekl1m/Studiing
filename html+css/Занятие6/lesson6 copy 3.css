@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text{
+    margin-top: 1%;
+    width: 60%;
+    float: left;
+}
+.list1{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2%;
+    vertical-align: top;
+    margin-left: 10px;
+    width: 30%;
+}
+.list2{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2%;
+    vertical-align: top;
+    margin-left: 10px;
+    width: 30%;
+}
+.list1 ul{
+    width: 300px;
+    height: 120px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(92, 92, 255);
+}
+.list2 ul{
+    width: 300px;
+    height: 90px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(92, 92, 255);
+}
+.list1 li{
+    width: 299px;
+    height: 30px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+}
+.list2 li{
+    width: 299px;
+    height: 30px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+}
+.list1 li:last-child{
+    border-bottom: 0;
+}
+.list1 li:first-child{
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+.list2 li:first-child{
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+@media screen and (max-width:800px){
+    .text{
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-left: 10px;
+    }
+    .list1{
+        width: 50%;
+    }
+    .list2{
+        width: 45%;
+        margin-left: 0;
+    }
+}

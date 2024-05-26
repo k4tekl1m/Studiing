@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#callback{
+    width: 550px;
+    height: 258px;
+    background-color: gainsboro;
+    padding: 20px;
+    box-sizing: border-box;  
+    box-shadow: inset 0px 0px 10px gray;
+}
+#callback::after{
+    content: 'Обратная связь';
+    background-color: rgb(255, 82, 82);
+    height: 30px;
+    width: 258px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 0px 0px 10px 10px;
+    transform: rotate(-90deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    top: 258px;
+    left: 550px;
+    box-shadow: 0px -5px 5px gray;
+}
+#imageBlock{
+    width: 500px;
+    height: 333px;
+    margin: auto;
+    overflow: hidden;
+}
+#imageBlock img{
+    width: 100%;
+    transition: 1s;
+}
+#imageBlock img:hover{
+    transform: scale(1.5);
+}
+
+
+.card{
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    display: inline-block;
+}
+.frontside, .backside{
+    background-color: white;
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    backface-visibility: hidden;
+    transition: 1s;
+    border: 2px solid gray;
+}
+.card:hover .frontside{
+    transform: rotateY(180deg);
+}
+.card:hover .backside{
+    transform: rotateY(360deg);
+}
+.card .frontside img{
+    width: 300px;
+}
+.frontside{
+    transform: rotateY(0deg);
+}
+.backside{
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+.backside h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.backside button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 96, 202);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* div{
+width: 500px;
+margin: auto;
+border: 1px solid black;
+margin-top: 20%;
+padding: 30px;
+}
+button{
+    width: 100%;
+    height: 80px;
+    font-size: 26px;
+    transition: 0.5s;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+button:hover{
+    transform: rotate(90deg);
+    transform-origin: 0% 100%;
+    background-color: rgb(66, 66, 255);
+} */

@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="HM8.js"></script>
+    <link rel="stylesheet" href="HM8.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Create new color</h3>
+    <form action="/" method="get" onsubmit="onSubmit(event);">
+        <div>
+            <span>
+                <label for="color">Color:</label>
+                <span id="errorNameColor"></span>
+            </span>
+            <br>
+            <input id="color" type="text" name="color" required>
+        </div>
+        <div>
+            <label for="typeColor">Type:</label>
+            <br>
+            <select name="typeColor" id="typeColor" required>
+                <option value="rgb">RGB</option>
+                <option value="rgba">RGBA</option>
+                <option value="hex">HEX</option>
+            </select>
+            <span>
+                <br>
+                <label for="code">Code:</label>
+                <span id="errorCodeColor"></span>
+            </span>
+            <br>
+            <input id="code" type="text" name="code" required>
+        </div>
+        <div>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+    <h3>All colors</h3>
+    <div id="bodyColors"></div>
+
+
+</body>
+</html>

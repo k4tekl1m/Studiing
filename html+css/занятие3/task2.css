@@ -1,0 +1,41 @@
+div{
+    width: 80%;
+    margin: auto;
+    border: 3px solid rgb(20, 255, 59);
+    padding: 20px;
+    border-radius: 50% 15% 50% 15%;
+    overflow: hidden;
+
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 20%;
+    box-sizing: border-box;
+    height: 100%;
+    background-image: url("fon.avif");
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-origin: border-box; */
+    background: url("fon.avif") center/cover fixed no-repeat;
+}
+html{
+    min-height: 100%;
+}
+
+/* background-image: url("fon.avif");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center; 
+указ всегда для заднего фона*/
+
+/* background-clip: text;
+-webkit-background-clip: text;
+transpend: apasity (вроде так) 
+прикольный фон*/
+/* html{
+background-color: rgba(red, green, blue, 0.5)
+} */

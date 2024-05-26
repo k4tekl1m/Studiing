@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#text{
+    margin: 0px 200px;
+    position:absolute;
+    top: 0;
+    width: 80%;
+    z-index: 0;
+}
+img{
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+#list-item{
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#first{
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#last{
+    width: 100px;
+    height: 220px;
+    background-color: lightgray;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.icon:first-child{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+}
+.name, .name1{
+    position: absolute;
+    margin-left: 290px;
+    background-color: lightgray;
+    width: 195px;
+    height: 100px;
+    align-items: center;
+    display: none;
+    justify-content: center;
+}
+.name2{
+    position: absolute;
+    margin-left: 99px;
+    background-color: lightgray;
+    width: 195px;
+    height: 220px;
+    align-items: center;
+    display: none;
+    justify-content: center;
+}
+#menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#list-item:hover{
+    background-color: rgb(97, 97, 97);
+}
+.name:hover{
+    background-color: rgb(97, 97, 97);
+}
+#list-item:hover .name{
+    background-color: rgb(97, 97, 97);
+}
+#menu:hover #edit{
+    display: flex;
+}

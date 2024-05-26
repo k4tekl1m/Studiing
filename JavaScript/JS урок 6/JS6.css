@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    background-color: lightblue;
+}
+#block{
+    /* display: none; */
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: brown;
+    border-radius: 50%;
+    top: 100px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+}
+#container{
+    width: 100vw;
+    height: 100vw;
+    background-color: lightpink;
+    padding: 100px;
+}

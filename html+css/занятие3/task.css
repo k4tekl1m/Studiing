@@ -1,0 +1,64 @@
+header img{
+    height: 128px;
+    width: 128px;
+    float: left;
+}
+header{
+    width: 80%;
+    margin: auto;
+}
+header p{
+    float: right;
+    color: gray;
+    font-size: 24px;
+    text-align: right;
+    width: 300px;
+    font-weight: bold;
+}
+/* clearfix 
+это чтобы не съедалась высота блока потому что исп 2 флота - то что внизу*/
+header::after, div::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+main img{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    transition: 1s;
+}
+main img:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+main div{
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    background-color: white;
+}
+#second{
+    border-top: none;    
+}
+#second img{
+    float: right;
+}
+#third img{
+    float: left;
+}
+#third{
+    border-top: none;
+}
+#second{
+    background-color: lightgrey;
+}
+body{
+    background-color: lightgray;
+}
+#second h2, #third h2{
+    margin-top: 80px;
+}

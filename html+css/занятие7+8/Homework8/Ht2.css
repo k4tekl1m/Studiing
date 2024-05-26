@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+                'Anie1 pink1 profile1'
+                'Anie1 blue1 profile1'
+                'Anie2 pink2 profile2'
+                'Anie2 blue2 profile2'
+                'Anie3 pink3 profile3'
+                'Anie3 blue3 profile3';
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 15% auto;
+    gap: 10px;
+}
+
+.Anie1{
+    grid-area: Anie1;
+}
+.Anie2{
+    grid-area: Anie2;
+}
+.Anie3{
+    grid-area: Anie3;
+}
+.pink1{
+    grid-area: pink1; 
+}
+.pink2{
+    grid-area: pink2; 
+}
+.pink3{
+    grid-area: pink3; 
+}
+.blue1{
+    grid-area: blue1; 
+}
+.blue2{
+    grid-area: blue2; 
+}
+.blue3{
+    grid-area: blue3; 
+}
+.profile{
+    grid-area: profile;
+}
+.profile1{
+    grid-area: profile1;
+}
+.profile2{
+    grid-area: profile2;
+}
+.profile3{
+    grid-area: profile3;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;   
+}
+.pink1, .pink2, .pink3{
+    width: 100%;
+    padding: 30px;
+    background-color: lightpink;
+    border-radius: 30px 30px 30px 0px;
+    margin: 1%;
+}
+.blue1, .blue2, .blue3{
+    width: 100%;
+    padding: 30px;
+    background-color: lightblue;
+    border-radius: 30px 30px 0px 30px;
+    margin: 1%;
+}
+
+.profile1:nth-child(2){
+    margin-top: 30%;
+}
+.profile1:nth-child(3){
+    margin-top: 40%;
+}
+.profile2:nth-child(2){
+    margin-top: 10%;
+}
+.profile2:nth-child(3){
+    margin-top: 30%;
+}
+.profile1, .profile2, .profile3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    width: 100%;
+    padding: 20px;    
+}
+.Anie1, .Anie2, .Anie3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    width: 100%;
+    padding: 20px;    
+}
+.profile1 span{
+    text-align: right;
+}
+.profile2 span{
+    text-align: left;
+}
+div span{
+    display: flex;
+    flex-direction: column;
+}
+div span:last-child{
+    font-size: 16px;
+    color: gray;
+}

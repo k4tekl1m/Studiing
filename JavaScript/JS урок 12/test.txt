@@ -1,0 +1,2 @@
+{"firstName":"kate","secondName":"klimova", "age":"25"}
+w3schools - jQuery - filters посмотреть

@@ -1,0 +1,30 @@
+.Head{
+    color: lightsalmon;
+}
+/* input[type="text"]{
+    border: 1px solid lightcoral;
+    
+} */
+#stik{
+    border: 2px solid rgb(31, 31, 31);
+}
+body{
+    background-image: url("fon.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fon{
+    width: 90%;
+    overflow:auto;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+.container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: auto;
+        margin-top: 8%;
+        background-color: rgba(24, 24, 24, 0.797);
+}

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+form{
+    width: 400px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto; 
+    /* чтоб поставить по центру */
+}
+label{
+    width: 90px;
+    display: inline-block;
+}
+div{
+    margin: 10px 0px;
+}
+input[type="text"], input[type="password"]{
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+input:focus{
+    border: 2px solid red;
+}
+textarea{
+    min-width: 200px;
+    max-width: 70%;
+    max-height: 200px;
+}

@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(225, 225, 225);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+#main{
+    margin: 20px;
+    text-align:left;
+    width: 90%;
+    padding: 0px 50px 0px 50px;
+    align-content: flex-start;
+}
+.card{
+    border: 2px solid gray;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    margin: 10px 5px 10px 5px;
+    display:inline-block;
+
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+h3{
+    margin: 0;
+    padding: 10px;
+}
+hr{
+    width: 90%;
+    border: 1px solid gray;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+}

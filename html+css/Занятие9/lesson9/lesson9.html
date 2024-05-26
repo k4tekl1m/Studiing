@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lesson9.css">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Авторизация</h1>
+    <form action="" method="post">
+<!-- экшн указываем обработчик форм или сервер -->
+        <!-- <ul>
+            <li>
+                <label for="ulogin">Логин</label>
+                <input type="text" id="ulogin" name="userlogin">
+            </li>
+            <li>
+                <label for="upassword">Пароль</label>
+                <input type="password" id="upassword" name="userlogin">
+            </li>
+        </ul> -->
+        <div>
+            <label for="ulogin">Логин</label>
+            <input type="text" id="ulogin" name="userlogin">
+        </div>
+        <div>
+            <label for="upassword">Пароль</label>
+            <input type="password" id="upassword" name="userlogin">
+        </div>
+        <div>
+            <label for="opinion">Ваше мнение</label>
+            <!-- <input type="opinion" name="opinion"> -->
+            <textarea name="opinion" id="opinion" ></textarea>
+        </div>
+        <div>
+            <label for="pizza">Выберете пиццу</label>
+            <select name="pizza" id="pizza">
+                <option value="marg">Маргарита</option>
+                <option value="marg2">Маргарита2</option>
+                <option value="marg3">Маргарита3</option>
+            </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Выберете размер</legend>
+                <div>
+                    <label for="lit">Маленькая</label>
+                    <input type="radio" name="size" id="lit" value="little">
+                </div>
+                <div>
+                    <label for="mid">Средняя</label>
+                    <input type="radio" name="size" id="mid" value="middle">
+                </div>
+                <div>
+                    <label for="lar">Большая</label>
+                    <input type="radio" name="size" id="lar" value="large">
+                </div>
+                <div>
+                    <label for="city">Город</label>
+                    <input type="text" name="city" id="city" list="citylist">
+                    <datalist id="citylist">
+                        <option>Novosibirsk</option>
+                        <option>Munhen</option>
+                        <option>Moscow</option>
+                        <option>Omsk</option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="rate">Оценка</label>
+                    <input type="number" id="rate" name="rate" min="1" max="12" step="0.1">
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <input type="submit" value="Войти">
+        </div>
+    </form>
+</body>
+</html>

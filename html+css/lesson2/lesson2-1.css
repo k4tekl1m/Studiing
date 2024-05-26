@@ -1,0 +1,24 @@
+#seasons{
+    list-style-type: none;
+    
+}
+#seasons li{
+    list-style-type:none;
+    list-style-image: url("");
+}
+.winter li::before{
+    content: '';
+    background-image: url("snowflake.png");
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+.spring li::before{
+    content: '';
+    background-image: url("flower.png.png");
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}

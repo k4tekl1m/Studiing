@@ -1,0 +1,132 @@
+#P1{
+    font-size: 40px;
+    margin-top: 100px;
+}
+#two{
+    background-color: rgb(189, 189, 189);
+    width: 200px;
+    height: 140px;
+    display: inline-block;
+}
+#cross{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-top: 20px;  
+}
+#one span{
+    display: center;
+}
+.text{
+    font-size: 120px;
+    text-align: center;
+    border: 50px;
+    margin-left: 10px;
+}
+body{
+    font-family: Arial;
+}
+.div1{
+    display: inline;
+}
+#nine{
+    background-color: rgb(189, 189, 189);
+    width: 200px;
+    height: 140px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.text2{
+    font-size: 120px;
+    text-align: center;
+    border: 50px;
+    margin-left: 10px;
+    color: rgb(229, 0, 0);
+}
+#six{
+    background-color: rgb(189, 189, 189);
+    width: 200px;
+    height: 140px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.text3{
+    font-size: 120px;
+    text-align: center;
+    border: 50px;
+    margin-left: 10px;
+    color: rgb(229, 0, 0);
+}
+#A1{
+    background-color: rgb(189, 189, 189);
+    width: 200px;
+    height: 140px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.text4{
+    font-size: 120px;
+    text-align: center;
+    border: 50px;
+    margin-left: 12px;
+    color: rgb(229, 0, 0);
+}
+#Q{
+    background-color: rgb(189, 189, 189);
+    width: 220px;
+    height: 140px;
+    display: inline-block;
+    margin-left: 20px;
+}
+#J{
+    background-color: rgb(189, 189, 189);
+    width: 190px;
+    height: 140px;
+    display: inline-block;
+    margin-left: 20px;
+}
+#P2{
+    font-size: 40px;
+    margin-top: 100px;
+}
+#three{
+    background-color: rgb(189, 189, 189);
+    width: 200px;
+    height: 140px;
+    display: inline-block;    
+}
+#A2{
+    background-color: rgb(189, 189, 189);
+    width: 200px;
+    height: 140px;
+    display: inline-block;
+    margin-left: 20px;
+}
+#ten{
+    background-color: rgb(189, 189, 189);
+    width: 260px;
+    height: 140px;
+    display: inline-block;
+    margin-left: 20px;
+}
+#K{
+    background-color: rgb(189, 189, 189);
+    width: 200px;
+    height: 140px;
+    display: inline-block;
+    margin-left: 20px;
+}
+#Eight{
+    background-color: rgb(189, 189, 189);
+    width: 190px;
+    height: 140px;
+    display: inline-block;
+    margin-left: 20px;
+}
+#three2{
+    background-color: rgb(189, 189, 189);
+    width: 200px;
+    height: 140px;
+    display: inline-block;
+    margin-left: 20px;    
+}

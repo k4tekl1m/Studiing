@@ -1,0 +1,332 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="Game.css">
+    <title>Sushi</title>
+</head>
+<body>
+   <nav class="navbar navbar-expand bg-dark bg-gradient d-flex p-3 container-fluid position-fixed top-0">
+    <div class="col-3 d-flex flex-row align-items-center justify-content-end">
+        <img src="WORLD OF GAME.png" alt="" width="230" height="25">
+    </div>
+    <div class="col-6 d-flex flex-row align-items-center justify-content-center navbar-collapse ">
+        <ul class="navbar-nav ">
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Категории</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Обзоры</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Новости</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Поддержка</a>
+            </li>
+        </ul>
+    </div>
+        <div class="col-3">
+            <button class="btn btn-primary rounded-pill w-40 h-30 px-4 fw-light" type="button">
+                Скачать
+            </button>
+            <!-- <span class="text-light ">Быстрый заказ</span> -->
+        </div>
+    </nav>
+    <!-- <div class="fon col-12 d-flex justify-content-center">
+        <img class="" src="fon.jpg" alt="">
+    </div> -->
+    <div class="container col-7 p-5 shadow" >
+        <div class="fs-3 text-light fw- d-flex justify-content-center mb-5 mt-2">
+            РЕГИСТРАЦИЯ АККАУНТА
+        </div>
+        <div class="col-7 m-auto" width="80">
+            <input class="form-control bg-dark text-light" type="text" placeholder="Введите свой ник" aria-label="readonly input example" readonly>
+        </div>
+        <div class="col-7 m-auto mt-3" width="80">
+            <input class="form-control bg-dark text-light" type="text" placeholder="Введите email" aria-label="readonly input example" readonly>
+        </div>
+        <div class="col-7 m-auto mt-4 mb-4 text-light d-flex flex-row justify-content-center">
+            <label class="form-check-label " for="date">Дата рождения</label>
+            <input name="date" class="text-light bg-dark mx-4" type="date" name="" id="">
+            <span class="pl-5 fw-bold ml-2">ПОЛ</span>
+            <div class="form-check mx-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label font-weight-light" for="flexRadioDefault1">
+                  Муж.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label font-weight-light" for="flexRadioDefault2">
+                  Жен.
+                </label>
+              </div>
+        </div>
+            <div class="m-auto mt-2 d-flex flex-column col-7">
+                <label class="country_select text-light " for="country">Страна проживания</label>
+                <select name="country" id="country" class="blueish bg-dark text-light" >
+                                                                <option value="AU">Австралия</option>
+                                                                <option value="AT">Австрия</option>
+                                                                <option value="AZ">Азербайджан</option>
+                                                                <option value="AX">Аландские острова</option>
+                                                                <option value="AL">Албания</option>
+                                                                <option value="DZ">Алжир</option>
+                                                                <option value="AS">Американское Самоа</option>
+                                                                <option value="AI">Ангилья</option>
+                                                                <option value="AO">Ангола</option>
+                                                                <option value="AD">Андорра</option>
+                                                                <option value="AQ">Антарктида</option>
+                                                                <option value="AG">Антигуа-и-Барбуда</option>
+                                                                <option value="AR">Аргентина</option>
+                                                                <option value="AM">Армения</option>
+                                                                <option value="AW">Аруба</option>
+                                                                <option value="AF">Афганистан</option>
+                                                                <option value="BS">Багамские острова</option>
+                                                                <option value="BD">Бангладеш</option>
+                                                                <option value="BB">Барбадос</option>
+                                                                <option value="BH">Бахрейн</option>
+                                                                <option value="BY">Беларусь</option>
+                                                                <option value="BZ">Белиз</option>
+                                                                <option value="BE">Бельгия</option>
+                                                                <option value="BJ">Бенин</option>
+                                                                <option value="CI">Берег Слоновой Кости</option>
+                                                                <option value="BM">Бермудские острова</option>
+                                                                <option value="BG">Болгария</option>
+                                                                <option value="BO">Боливия</option>
+                                                                <option value="BA">Босния и Герцеговина</option>
+                                                                <option value="BW">Ботсвана</option>
+                                                                <option value="BR">Бразилия</option>
+                                                                <option value="IO">Британские территории в Индийском океане</option>
+                                                                <option value="BN">Бруней-Даруссалам</option>
+                                                                <option value="BF">Буркина-Фасо</option>
+                                                                <option value="BI">Бурунди</option>
+                                                                <option value="BT">Бутан</option>
+                                                                <option value="MK">Бывшая Югославская Республика Македония</option>
+                                                                <option value="VU">Вануату</option>
+                                                                <option value="VA">Ватикан</option>
+                                                                <option value="HU">Венгрия</option>
+                                                                <option value="VE">Венесуэла</option>
+                                                                <option value="VG">Виргинские острова (Великобритания)</option>
+                                                                <option value="VI">Виргинские острова (США)</option>
+                                                                <option value="UM">Внешние малые острова США</option>
+                                                                <option value="TL">Восточный Тимор</option>
+                                                                <option value="VN">Вьетнам</option>
+                                                                <option value="GA">Габон</option>
+                                                                <option value="HT">Гаити</option>
+                                                                <option value="GY">Гайана</option>
+                                                                <option value="GM">Гамбия</option>
+                                                                <option value="GH">Гана</option>
+                                                                <option value="GP">Гваделупа</option>
+                                                                <option value="GT">Гватемала</option>
+                                                                <option value="GN">Гвинея</option>
+                                                                <option value="GW">Гвинея-Бисау</option>
+                                                                <option value="DE">Германия</option>
+                                                                <option value="GI">Гибралтар</option>
+                                                                <option value="HN">Гондурас</option>
+                                                                <option value="HK">Гонконг</option>
+                                                                <option value="GD">Гренада</option>
+                                                                <option value="GL">Гренландия</option>
+                                                                <option value="GR">Греция</option>
+                                                                <option value="GE">Грузия</option>
+                                                                <option value="GU">Гуам</option>
+                                                                <option value="DK">Дания</option>
+                                                                <option value="CD">Демократическая Республика Конго</option>
+                                                                <option value="JE">Джерси</option>
+                                                                <option value="DJ">Джибути</option>
+                                                                <option value="DM">Доминика</option>
+                                                                <option value="DO">Доминиканская Республика</option>
+                                                                <option value="EG">Египет</option>
+                                                                <option value="ZM">Замбия</option>
+                                                                <option value="EH">Западная Сахара</option>
+                                                                <option value="ZW">Зимбабве</option>
+                                                                <option value="IL">Израиль</option>
+                                                                <option value="IN">Индия</option>
+                                                                <option value="ID">Индонезия</option>
+                                                                <option value="JO">Иордания</option>
+                                                                <option value="IQ">Ирак</option>
+                                                                <option value="IR">Иран</option>
+                                                                <option value="IE">Ирландия</option>
+                                                                <option value="IS">Исландия</option>
+                                                                <option value="ES">Испания</option>
+                                                                <option value="IT">Италия</option>
+                                                                <option value="YE">Йемен</option>
+                                                                <option value="CV">Кабо-Верде</option>
+                                                                <option value="KZ">Казахстан</option>
+                                                                <option value="KY">Каймановы острова</option>
+                                                                <option value="KH">Камбоджа</option>
+                                                                <option value="CM">Камерун</option>
+                                                                <option value="CA">Канада</option>
+                                                                <option value="QA">Катар</option>
+                                                                <option value="KE">Кения</option>
+                                                                <option value="CY">Кипр</option>
+                                                                <option value="KI">Кирибати</option>
+                                                                <option value="CN">Китай</option>
+                                                                <option value="CO">Колумбия</option>
+                                                                <option value="KM">Коморы</option>
+                                                                <option value="CG">Конго</option>
+                                                                <option value="XK">Косово</option>
+                                                                <option value="CR">Коста-Рика</option>
+                                                                <option value="KW">Кувейт</option>
+                                                                <option value="KG">Кыргызстан</option>
+                                                                <option value="LA">Лаос</option>
+                                                                <option value="LV">Латвия</option>
+                                                                <option value="LS">Лесото</option>
+                                                                <option value="LR">Либерия</option>
+                                                                <option value="LB">Ливан</option>
+                                                                <option value="LY">Ливия</option>
+                                                                <option value="LT">Литва</option>
+                                                                <option value="LI">Лихтенштейн</option>
+                                                                <option value="LU">Люксембург</option>
+                                                                <option value="MU">Маврикий</option>
+                                                                <option value="MR">Мавритания</option>
+                                                                <option value="MG">Мадагаскар</option>
+                                                                <option value="YT">Майотта</option>
+                                                                <option value="MO">Макао</option>
+                                                                <option value="MW">Малави</option>
+                                                                <option value="MY">Малайзия</option>
+                                                                <option value="ML">Мали</option>
+                                                                <option value="MV">Мальдивы</option>
+                                                                <option value="MT">Мальта</option>
+                                                                <option value="MP">Марианские острова</option>
+                                                                <option value="MA">Марокко</option>
+                                                                <option value="MQ">Мартиника</option>
+                                                                <option value="MH">Маршалловы острова</option>
+                                                                <option value="MX">Мексика</option>
+                                                                <option value="MZ">Мозамбик</option>
+                                                                <option value="MC">Монако</option>
+                                                                <option value="MN">Монголия</option>
+                                                                <option value="MS">Монтсеррат</option>
+                                                                <option value="MM">Мьянма</option>
+                                                                <option value="NA">Намибия</option>
+                                                                <option value="NR">Науру</option>
+                                                                <option value="NP">Непал</option>
+                                                                <option value="NE">Нигер</option>
+                                                                <option value="NG">Нигерия</option>
+                                                                <option value="NL">Нидерланды</option>
+                                                                <option value="NI">Никарагуа</option>
+                                                                <option value="NU">Ниуэ</option>
+                                                                <option value="NZ">Новая Зеландия</option>
+                                                                <option value="NC">Новая Каледония</option>
+                                                                <option value="NO">Норвегия</option>
+                                                                <option value="NF">Норфолк</option>
+                                                                <option value="TZ">Объединенная Республика Танзания</option>
+                                                                <option value="AE">Объединенные Арабские Эмираты</option>
+                                                                <option value="OM">Оман</option>
+                                                                <option value="BV">Остров Буве</option>
+                                                                <option value="GG">Остров Гернси</option>
+                                                                <option value="CC">Остров Кокос</option>
+                                                                <option value="IM">Остров Мэн</option>
+                                                                <option value="CX">Остров Рождества</option>
+                                                                <option value="SH">Остров Святой Елены</option>
+                                                                <option value="HM">Остров Херд и острова Макдональд</option>
+                                                                <option value="CK">Острова Кука</option>
+                                                                <option value="PN">Острова Питкэрн</option>
+                                                                <option value="TC">Острова Туркс и Кайкос</option>
+                                                                <option value="WF">Острова Уоллис и Футуна</option>
+                                                                <option value="SJ">Острова Шпицберген и Ян-Майен</option>
+                                                                <option value="PK">Пакистан</option>
+                                                                <option value="PW">Палау</option>
+                                                                <option value="PA">Панама</option>
+                                                                <option value="PG">Папуа — Новая Гвинея</option>
+                                                                <option value="PY">Парагвай</option>
+                                                                <option value="PE">Перу</option>
+                                                                <option value="PL">Польша</option>
+                                                                <option value="PT">Португалия</option>
+                                                                <option value="PR">Пуэрто-Рико</option>
+                                                                <option value="KR">Республика Корея</option>
+                                                                <option value="MD">Республика Молдова</option>
+                                                                <option value="RE">Реюньон</option>
+                                                                <option value="RU" selected="">Россия</option>
+                                                                <option value="RW">Руанда</option>
+                                                                <option value="RO">Румыния</option>
+                                                                <option value="US">США</option>
+                                                                <option value="SV">Сальвадор</option>
+                                                                <option value="WS">Самоа</option>
+                                                                <option value="SM">Сан-Марино</option>
+                                                                <option value="ST">Сан-Томе и Принсипи</option>
+                                                                <option value="SA">Саудовская Аравия</option>
+                                                                <option value="SC">Сейшельские острова</option>
+                                                                <option value="PM">Сен-Пьер и Микелон</option>
+                                                                <option value="SN">Сенегал</option>
+                                                                <option value="VC">Сент-Винсент и Гренадины</option>
+                                                                <option value="KN">Сент-Китс и Невис</option>
+                                                                <option value="LC">Сент-Люсия</option>
+                                                                <option value="RS">Сербия</option>
+                                                                <option value="SG">Сингапур</option>
+                                                                <option value="SY">Сирия</option>
+                                                                <option value="SK">Словакия</option>
+                                                                <option value="SI">Словения</option>
+                                                                <option value="GB">Соединённое Королевство</option>
+                                                                <option value="SB">Соломоновы острова</option>
+                                                                <option value="SO">Сомали</option>
+                                                                <option value="SD">Судан</option>
+                                                                <option value="SR">Суринам</option>
+                                                                <option value="SL">Сьерра-Леоне</option>
+                                                                <option value="TJ">Таджикистан</option>
+                                                                <option value="TH">Таиланд</option>
+                                                                <option value="TW">Тайвань</option>
+                                                                <option value="PS">Территория Палестины</option>
+                                                                <option value="TG">Того</option>
+                                                                <option value="TK">Токелау</option>
+                                                                <option value="TO">Тонга</option>
+                                                                <option value="TT">Тринидад-и-Тобаго</option>
+                                                                <option value="TV">Тувалу</option>
+                                                                <option value="TN">Тунис</option>
+                                                                <option value="TM">Туркменистан</option>
+                                                                <option value="TR">Турция</option>
+                                                                <option value="UG">Уганда</option>
+                                                                <option value="UZ">Узбекистан</option>
+                                                                <option value="UA">Украина</option>
+                                                                <option value="UY">Уругвай</option>
+                                                                <option value="FO">Фарерские острова</option>
+                                                                <option value="FM">Федеративные Штаты Микронезии</option>
+                                                                <option value="FJ">Фиджи</option>
+                                                                <option value="PH">Филиппины</option>
+                                                                <option value="FI">Финляндия</option>
+                                                                <option value="FK">Фолклендские острова</option>
+                                                                <option value="FR">Франция</option>
+                                                                <option value="GF">Французская Гвиана</option>
+                                                                <option value="PF">Французская Полинезия</option>
+                                                                <option value="HR">Хорватия</option>
+                                                                <option value="CF">Центральная Африканская Республика</option>
+                                                                <option value="TD">Чад</option>
+                                                                <option value="ME">Черногория</option>
+                                                                <option value="CZ">Чешская Республика</option>
+                                                                <option value="CL">Чили</option>
+                                                                <option value="CH">Швейцария</option>
+                                                                <option value="SE">Швеция</option>
+                                                                <option value="LK">Шри-Ланка</option>
+                                                                <option value="EC">Эквадор</option>
+                                                                <option value="GQ">Экваториальная Гвинея</option>
+                                                                <option value="ER">Эритрея</option>
+                                                                <option value="SZ">Эсватини</option>
+                                                                <option value="EE">Эстония</option>
+                                                                <option value="ET">Эфиопия</option>
+                                                                <option value="ZA">Южная Африка</option>
+                                                                <option value="GS">Южная Георгия и Южные Сандвичевы Острова</option>
+                                                                <option value="TF">Южные территории Франции</option>
+                                                                <option value="JM">Ямайка</option>
+                                                                <option value="JP">Япония</option>
+                                                        </select>
+            </div>
+            <div class="m-auto mt-2 d-flex flex-column col-7">
+                <label class="number_select text-light mt-2" for="years">Игровой опыт (лет)</label>
+                <input class="bg-dark text-light mt-1" type="number" name="years" id="" min="0" max="60">
+            </div>
+            <div class="m-auto mt-2 mb-5 d-flex flex-column col-7">
+                <label class="country_select text-light " for="hero">Тип героя</label>
+                <select name="hero" id="country" class="blueish bg-dark text-light mt-1 mb-3" >
+                                                                <option value="1">Танк</option>
+                                                                <option value="2">Дамагер</option>
+                                                                <option value="3">Саппорт</option>
+            </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

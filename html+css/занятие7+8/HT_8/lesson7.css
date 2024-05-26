@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container div{
+    padding: 10px;
+    font-size: 64px;
+    text-align: center;
+    flex-basis: 25%;
+    /* flex-basis: ;
+    flex-grow: ;
+    flex-shrink: ; */
+    flex: 0 1 250px;
+}
+.container{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    align-items: center;
+    /* align-items: stretch; -растянуть по всей высоте (но у дива не должно быть высоты) */
+    flex-direction: row;
+    flex-wrap: no wrap;
+    /* flex-flow: row wrap; -это дирекшн и врап вместе как сокращение */
+    align-content: stretch; 
+    /* расстояние между строками */
+}
+.container div:nth-child(1){
+    background-color: pink;
+    /* flex-basis: 10%; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: stretch;
+    /* для изменения одного определенного элемента */
+}
+/* 300/5*2  */
+.container div:nth-child(2){
+    background-color: lightskyblue;
+    /* flex-basis: 100px; */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.container div:nth-child(3){
+    background-color: lightgreen;
+    /* flex-basis: 100px; */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.container div:nth-child(4){
+    background-color: lightsalmon;
+    /* flex-basis: 20%; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: ;
+    flex-direction: ;
+    justify-content: ;
+    align-content: flex-start;
+}
+/* flex-shrink - сила (коэффициента) уменьшения элемента */
+

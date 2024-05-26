@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lesson5.css">
+    <title>Tables</title>
+</head>
+<body>
+    <table>
+        <caption>Таблица 1</caption>
+        <colgroup>
+            <col class="col-1">
+            <col span="2" class="col-2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Столбец1</th>
+                <th>Столбец2</th>
+                <th>Столбец3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td colspan="2">2</td>
+                <!-- <td>3</td> -->
+            </tr>                
+            <tr>
+                <!-- <td>1</td> -->
+                <td>2</td>
+                <td>3</td>
+            </tr>  
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr> 
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr> 
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

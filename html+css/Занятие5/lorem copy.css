@@ -1,0 +1,35 @@
+.menu{
+    border: 1px solid black;
+    padding: 20px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: aquamarine;
+}
+.list-item{
+    margin: 0px 10px;
+    padding: 20px 10px;
+}
+.catalog{
+    position: relative;
+}
+.podcatalog{
+    display: none;
+    position: absolute;
+    top: 40;
+    left: 0;
+    /* padding: 10px 20px; */
+    background-color: lightgray;
+}
+.podcatalog div{
+    padding: 10px 20px;
+}
+.catalog:hover .podcatalog{
+    display: block;
+}
+.list-item{
+    display: inline-block;
+}
+.podcatalog div:hover{
+    background-color: aquamarine;
+}

@@ -1,0 +1,35 @@
+.Head{
+    color: lightsalmon;
+}
+/* input[type="text"]{
+    border: 1px solid lightcoral;
+    
+} */
+nav{
+    z-index: 100000000;
+}
+#stik{
+    border: 2px solid rgb(31, 31, 31);
+}
+
+.fon{
+    width: 90%;
+    overflow:auto;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+.container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: auto;
+        margin-top: 8%;
+}
+textarea{
+    max-width: 560px;
+    max-height: 200px;
+    border: 2px solid rgb(31, 31, 31);
+    border-radius: 8px;
+    border-color: black gray gray black;
+}

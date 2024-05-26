@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#block{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    /* animation: myAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: backwards; */
+    animation: myAnim 2s ease-in-out infinite;
+}
+@keyframes myAnim{
+    0%from{
+        margin-left: 0px;
+    }
+    25%{
+        margin-left: 520px;
+    }
+    100%{
+        margin-left: 100px
+    }
+}

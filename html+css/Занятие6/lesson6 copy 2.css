@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    margin: auto;
+}
+.prevu{
+    display: inline-block;
+    width: 20%;
+    padding: 1%;
+    vertical-align: top;
+}
+.prevu img{
+    width: 100%;
+}
+.mainpart{
+    display: inline-block;
+    width: 68%;
+    padding: 1%;
+    vertical-align: top;
+}
+.butblock{
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    padding: 1%;
+}
+.loader{
+    border: 1px solid black;
+    position: relative;
+    padding: px;
+}
+.backload{
+    position: absolute;
+    background-color: blueviolet;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 46%;
+    z-index: -1;
+}
+.loader span:nth-child(1){
+    float: left;
+}
+.loader span:nth-child(2){
+    float: right;
+}
+.butblock button{
+    border: 1px solid black;
+    padding: 5px 0;
+    width: 100%;
+    background-color: blue;
+    color: whitesmoke;
+}
+.mainpart h3{
+    margin: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media screen and (max-width:600px){
+    .prevu, .mainpart,.butblock{
+        display: block;
+        width: 96%;
+        margin: 2% auto;
+    }
+    .container{
+        width: 96%;
+        margin: auto;
+    }
+}

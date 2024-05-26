@@ -1,0 +1,13 @@
+#cube{
+    width: 100px;
+    height: 50px;
+}
+#container{
+    width: 1000px;
+    height: auto;
+    display: flex;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}

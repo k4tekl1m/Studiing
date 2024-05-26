@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(231, 231, 231);
+}
+#main h1{
+    text-align: center;
+}
+h1{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+#main h2{
+    text-align: center;
+    margin-top: 20px; 
+}
+body{
+    font-family: Arial;
+}
+p{
+    margin-left: 400px;
+}
+#text code{
+    background-color: rgb(219, 219, 219);
+}
+.one{
+    margin-top: 10em;
+    line-height: 1.5em;
+}
+.two{
+    margin-top: 10em;
+    line-height: 1.5em;
+}
+.h2{
+    text-align: center;
+}
+code{
+    color: rgb(168, 0, 0);
+}
+#text2{
+    margin-left: 400px;
+    background-color: rgb(219, 219, 219);
+    margin-right: 450px;
+    line-height: 0.5em;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+#tags{
+    font-size: 13px;
+
+}
+#tags span{
+    background-color: rgb(216, 216, 216);
+    color: rgb(39, 154, 154);
+}
+hr{
+    margin-left: 400px;
+    margin-right: 450px;
+}
+.title{
+    color: black;
+}

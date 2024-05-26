@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="HT1.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm head navbar-dark">
+        <div class="col-2 d-flex align-items-center justify-content-end">
+            <img src="student.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top m-3">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse col-9" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="mx-2 navbar-brand active" href="#">Homework</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Settings.html">Setting</a>
+            </li>  
+          </ul>
+        </div>  
+        <div class="d-flex justify-content-start col-1"><img src="av_256.png" alt="#" width="60" height="60" class="m-2"></div>
+    </nav>
+    <div class="container m-auto">
+        <div class="row w-80">
+            <div class="col-4 text-start fs-4 mb-2 d-flex align-items-end">
+                <span class="align-text-top">JavaScript</span>
+            </div>
+            <div class="col-4 d-flex align-items-start fs-2 justify-content-center mt-3">
+                <span class="">Homework</span>
+            </div>
+            <div class="col-4 d-flex flex-column mt-4">
+                <div class="d-flex flex-row align-items-center justify-content-end">
+                    <span>current -</span>
+                    <div class="circle gray"></div>
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-end">
+                    <span>reviewed -</span>
+                    <div class="circle green"></div>
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-end">
+                    <span>under review -</span>
+                    <div class="circle blue"></div>
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-end">
+                    <span>overdue -</span>
+                    <div class="circle pink"></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="JScards row d-flex flex-row">
+            <div class="col-4">
+                <div class="card p-3 gray">
+                    <h5 class="card-title mb-3">Loops</h5>
+                    <h6 class="card-subtitle text-muted mb-3">10/05/2019</h6>
+                    <div class="input-group mb-3 shadow-sm">
+                        <input type="text" class="form-control" placeholder="Choose file" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-light btn-outline-gray text-dark" type="button" id="button-addon2">Browse</button>
+                      </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card p-3 blue">
+                    <h5 class="card-title text-white mb-3">Conditionals statements</h5>
+                    <h6 class="card-subtitle text-gray mb-3">8/05/2019</h6>
+                    <div class="btn-group mb-3" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-download" style="color: #ffffff;"></i> Your file</button>
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-trash" style="color: #ffffff;"></i> Remove</button>
+                      </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card p-3 blue">
+                    <h5 class="card-title text-white mb-3">Variables</h5>
+                    <h6 class="card-subtitle text-gray mb-3">5/05/2019</h6>
+                    <div class="btn-group mb-3" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-download" style="color: #ffffff;"></i> Your file</button>
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-trash" style="color: #ffffff;"></i> Remove</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 text-start fs-4 mb-2 mt-5 d-flex align-items-end">
+            <span class="align-text-top">HTML & CSS</span>
+        </div>
+        <hr>
+        <div class="JScards row d-flex flex-row">
+            <div class="col-4">
+                <div class="card p-3 pink">
+                    <h5 class="card-title mb-3 text-white">Adaptive layout</h5>
+                    <h6 class="card-subtitle text-gray mb-3">29/04/2019</h6>
+                    <div class="input-group mb-3 shadow-sm">
+                        <input type="text" class="form-control" placeholder="Choose file" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-light btn-outline-light text-dark" type="button" id="button-addon2">Browse</button>
+                      </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card p-3 pink">
+                    <h5 class="card-title mb-3 text-white">Grid Layout</h5>
+                    <h6 class="card-subtitle text-gray mb-3">27/04/2019</h6>
+                    <div class="input-group mb-3 shadow-sm">
+                        <input type="text" class="form-control" placeholder="Choose file" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-light btn-outline-light text-dark " type="button" id="button-addon2">Browse</button>
+                      </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card p-3 green">
+                    <h5 class="card-title text-white mb-3">Flexbox</h5>
+                    <h6 class="card-subtitle text-gray mb-3">24/04/2019</h6>
+                    <div class="btn-group mb-3" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-download" style="color: #ffffff;"></i> Your file</button>
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-trash" style="color: #ffffff;"></i> Remove</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="JScards row d-flex flex-row mt-3 mb-5">
+            <div class="col-4">
+                <div class="card p-3 green">
+                    <h5 class="card-title text-white mb-3">Animations</h5>
+                    <h6 class="card-subtitle text-gray mb-3">20/04/2019</h6>
+                    <div class="btn-group mb-3" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-download" style="color: #ffffff;"></i> Your file</button>
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-trash" style="color: #ffffff;"></i> Remove</button>
+                      </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card p-3 green">
+                    <h5 class="card-title text-white mb-3">Forms</h5>
+                    <h6 class="card-subtitle text-gray mb-3">18/04/2019</h6>
+                    <div class="btn-group mb-3" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-download" style="color: #ffffff;"></i> Your file</button>
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-trash" style="color: #ffffff;"></i> Remove</button>
+                      </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card p-3 green">
+                    <h5 class="card-title text-white mb-3">Tables</h5>
+                    <h6 class="card-subtitle text-gray mb-3">17/04/2019</h6>
+                    <div class="btn-group mb-3" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-download" style="color: #ffffff;"></i> Your file</button>
+                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-trash" style="color: #ffffff;"></i> Remove</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/a2c1626da9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.left img{
+    float: left;
+    box-shadow: -5px -5px 20px rgb(255, 0, 0);
+    margin-right: 10px;
+}
+.right img{
+    float: right;
+    box-shadow: 5px 5px 20px rgb(255, 0, 0);
+    margin-left: 10px;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+p{
+    text-shadow: -5px -5px 20px rgb(0, 0, 0);
+}

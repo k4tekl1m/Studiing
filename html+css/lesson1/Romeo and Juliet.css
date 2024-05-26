@@ -1,0 +1,20 @@
+
+body{
+    background-color: rgb(245, 245, 245);
+    font-family: Arial;
+}
+#name{
+    text-align: center;
+    color: rgb(63, 63, 185);
+}
+h2{
+    color: rgb(83, 98, 100);
+    margin-top: 30px;
+}
+h3{
+    color: rgb(83, 98, 100);
+}
+#text{
+    margin-top: 20px;
+    line-height: 0.5;
+}

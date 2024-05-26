@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class HtmlElement {
+    name = "";
+    selfClosed = 0;
+    text = "";
+    atributes = {}
+    styles = {};
+    childrens = {};
+    htmlResult = "";
+
+    constructor(x) {
+        this.name = x.name;
+        this.atributes = x.atributes;
+        this.styles = x.styles;
+        this.text = x.text;
+        this.selfClosed = x.selfClosed;
+        this.childrens = x.childrens;
+
+    }
+    setStyle() {
+        let style = ' style ="';
+        for (let property in this.styles) {
+            style += ' ' + property + ": " + this.styles[property] + ";";
+        }
+        style += '"';
+        return style;
+    }
+    setAtributes() {
+        let atr = "";
+        for (let property in this.atributes) {
+            atr += ' ' + property + '= "' + this.atributes[property] + '"';
+        }
+        return atr;
+    }
+
+    getHtml() {
+
+        this.htmlResult += "<" + this.name + " ";
+        this.htmlResult += this.setStyle();
+        this.htmlResult += this.setAtributes();
+        this.htmlResult += ">";
+
+        if (this.text) this.htmlResult += this.text;
+
+        if (!this.selfClosed) {
+            for (let child in this.childrens) {
+                let newChild = new HtmlElement(this.childrens[child]);
+                this.htmlResult += newChild.getHtml();
+            }
+
+            this.htmlResult += "</" + this.name + ">";
+        }
+
+
+        console.log("getHTML", this.htmlResult);
+
+        return this.htmlResult;
+    }
+
+    getCode() {
+        this.htmlResult+=this.main.getCss();
+
+    }
+
+    scanObjectRecursive(parentID, childrenObj, parentObj) {
+        for (let child in parentObj.childrens) {
+            parentObj.childrens[child] = this.scanObjectRecursive(parentID, childrenObj, parentObj.childrens[child])
+        }
+        if (parentObj.atributes.id === parentID)
+            parentObj.childrens.push(childrenObj);
+        return parentObj;
+    }
+
+
+}
+       
+
+let beginObj1= {
+    name: "style",
+    atributes: {
+        class: ".wrap",
+    },
+    styles: {
+        display: "flex",
+    }
+}
+        
+
+
+let beginObj = {
+    name: "div",
+    atributes: {
+        id: "wrapper",
+    },
+    styles: {
+        display: "flex",
+    },
+    childrens: [
+        {
+            name: "div",
+            atributes: {
+                id: "wrapper2",
+            },
+            styles: {
+                width: "300px",
+                margin: "10px"
+            },
+            childrens: [
+                {
+                    name: "h3",
+                    text: "What is Lorem Ipsum?",
+                    atributes: {
+                        id: "wrapper2-1",
+                    },
+                    styles: {
+                    },
+                    childrens: []
+                },
+                {
+                    name: "img",
+                    atributes: {
+                        id: "wrapper2-2",
+                        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS50varCsjs3D-U5xhkUaubOfixfkqTw741Ow&usqp=CAU"
+                    },
+                    styles: {
+                        width: "100%"
+                    },
+                    selfClosed: 1,
+                    childrens: []
+                },
+                {
+                    name: "p",
+                    text: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nulla ipsum, voluptatem nesciunt enim possimus, id, odio eos laborum pariatur unde? Officiis hic nulla velit, nihil modi dolores ducimus dolore.",
+                    atributes: {
+                        id: "wrapper2-3"
+                    },
+                    styles: {
+                        textAlign: "justify",
+                    },
+                    childrens: []
+                },
+                {
+                    name: "a",
+                    text: "More...",
+                    atributes: {
+                        id: "wrapper2-4",
+                        href: "https://www.lipsum.com/",
+                        target: "_blank"
+                    },
+                    styles: {
+                    },
+                    selfClosed: 1,
+                    selfClosed: 1,
+                    selfClosed: 1,
+
+                    childrens: []
+                },
+
+            ]
+        },
+    ]
+};
+
+let wrapper = new HtmlElement(beginObj);
+document.write(wrapper.getHtml());
+
+class CssClass {
+  constructor(name, styles) {
+    this.name = name;
+    this.styles = {};
+    for (let key in styles) {
+      if (this.checkKey(key)) {
+        this.styles[key] = styles[key];
+      }
+    }
+  }
+  checkKey(key) {
+    const style = document.body.style;
+    return key in style;
+  }
+  setStyle(key, value) {
+    if (!this.checkKey(key)) {
+      return;
+    }
+    this.styles[key] = value;
+  }
+  unsetStyle(key) {
+    delete this.styles[key];
+  }
+  getStyle(key) {
+    return this.styles[key];
+  }
+  getCss() {
+    return `.${this.name}${JSON.stringify(this.styles)
+      .replace(/\,/g, "; \n")
+      .replace(/"/g, "")}`;
+  }
+}
+const main = new CssClass("red", { color: "red" });
+main.setStyle("font-size", "2em");
+main.unsetStyle("color");
+    </script>
+</body>
+</html>

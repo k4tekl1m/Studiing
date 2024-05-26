@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 49%;
+    height: 200px;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+@media screen and (max-width:530px){
+    div{
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}

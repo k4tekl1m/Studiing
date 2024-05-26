@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* @font-face{
+    font-family: myFont;
+    src: url(Apercu/Apercu\ Regular.otf);
+}
+body{
+    font-family: myFont;
+} */
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.hover{
+    cursor: pointer;
+    /* filter:brightness(70%);
+    opacity: 100%;
+    visibility: visible; */
+    /* background: linear-gradient(0deg, rgba(0,0,0,0.7083625686602766) 0%, rgba(0,0,0,0.23777433336615894) 100%); */
+}
+.header{
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    background-color: lightskyblue;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.bodyContainer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+}
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+.link:hover{
+    color: gray;
+}
+ul{
+    list-style-type: none; /* Убирает буллиты */
+}
+li{
+    display: inline;
+    margin: 0px 20px;
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+}
+button{
+    width: max-content;
+    padding: 10px 20px;
+    border: 0px;
+}
+.br{
+    border-radius: 20px;
+}
+.circle{
+    border-radius: 50%;
+}
+.bg-img{
+    content: '';
+    background-image: url('none.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 250px;
+    height: 150px;
+}
+.cardColumn{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    width: 350px;
+    border: 1px solid gray;
+    border-radius: 5%;
+}
+.cardRow{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: flex-start;
+    width: 650px;
+    border: 1px solid gray;
+    border-radius: 5%;
+}
+.cardIMG{
+    width: 300px;
+    height: 200px;
+}
+.label{
+    position: absolute;
+    top: 10;
+    right: 10;
+    width: min-content;
+    height: fit-content;
+    padding: 5px 10px 7px 10px;
+    color: white;
+    background-color: brown;
+    border-radius: 20px;
+    align-self:center;
+}

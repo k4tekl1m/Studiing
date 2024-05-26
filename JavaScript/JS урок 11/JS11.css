@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100vh;
+}
+#modalWindow{
+    display: none;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#modalShade{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.575);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#modalUserName{
+    width: 100%;
+    background-color: lightgrey;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+#titleList{
+    list-style: decimal;
+    font-size: 20px;
+    margin-left: 20px;    
+}
+li:hover{
+    cursor: pointer;
+}
+
+
+
+
+

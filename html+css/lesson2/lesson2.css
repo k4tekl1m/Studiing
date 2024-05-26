@@ -1,0 +1,44 @@
+#productList{
+    list-style-type: none;
+    list-style-image: url("");
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+}
+#productList li{
+    border: 1px solid gray;
+    list-style-position:inside;
+    padding: 10px;
+    list-style-type: none;
+}
+#productList li::before{
+    content: ')';
+    background-image: url("sedan.png");
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#productList li::after{
+    content: '\\/';
+}
+#one{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    overflow: hidden;
+    margin-left: 50px;
+    
+}
+#two{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 50px;
+}

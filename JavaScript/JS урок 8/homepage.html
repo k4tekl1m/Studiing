@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+</head>
+<body>
+    <h1>home page</h1>
+    <h2 id="out"></h2>
+    <script>
+    //    out.innerText = document.cookie
+       str = document.cookie //name=kate; pass=325465468
+       let arr = str.split("; ")
+       //[name=kate, pass=325465468]
+       let cookieObj = {}
+       //{name: "kate"}
+       for (let i = 0; i < arr.length; i++) {
+            let c = arr[i].split("=") //{name,kate}
+            cookieObj[c[0]]=c[1]
+       }
+       out.innerText = cookieObj["name"]
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    font-size: 32px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+table{
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    border-collapse: collapse;
+    /* empty-cells: hide; */
+}
+/* th{
+    border: 1px solid red;
+
+}
+td{
+    border: 1px solid blue;
+    
+}
+tr{
+    background-color: lightgray;
+}
+tr:nth-child(3n){
+    background-color: gray;
+}
+tr:nth-child(3n+1){
+    background-color: rgb(243, 243, 243);
+}
+tr:first-child{
+    background-color: blue;
+}
+tr:last-child{
+    background-color: black;
+} */
+thead{
+    border-bottom: 2px dotted black;
+}
+tbody tr:hover{
+    background-color: transparent;
+}
+/* caption{
+    text-align: right;
+}
+table{
+    background-image: url('fon.avif');
+    background-position: center;
+    background-size: cover;
+}
+tr{
+    background-color: white;
+} */
+.col-1{
+    background-color: red;
+}
+.col-2{
+    background-color: blue;
+}
+td{
+    border: 1px solid black;
+}

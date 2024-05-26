@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HM6.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="taskOne">
+        <p>Enter you name (name can't contain digits)</p>
+        <input type="text" onkeypress="noDigits(event)" />
+    </div>
+
+    <div id="taskTwo">
+        <button id="openModal">Open modal</button>
+        <div id="modalWindow">
+            <p>Hello from modal window!</p>
+            <button id="closeModal">Close</button>
+        </div>
+        <div id="popup_fade"></div>
+    </div>
+    <div id="taskFour">
+        <div id="trafficLight">
+            <div id="light" class="light"></div>
+            <div id="light" class="light"></div>
+            <div id="light" class="light"></div>
+        </div>
+        <button id="button">NEXT</button>
+    </div>
+    <div id="taskFive">
+        <ol id="booksList" class="books">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aut inventore accusantium rerum soluta minus nam.</li>
+            <li>Sit, vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Voluptate quidem veritatis doloremque obcaecati. Lorem ipsum dolor sit amet.</li>
+            <li>Quos eaque dicta ducimus doloremque ullam labore unde.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, esse autem.</li>
+            <li>Aperiam, nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Voluptas, minus.</li>
+            <li>Dolorem, facere et? Maiores repellendus alias minima!</li>
+        </ol>
+    </div>
+    <div class="taskSix">
+        <div>
+          <button data-tooltip="Tool tip 1">BUTTON 1</button>
+          <button data-tooltip="Tool tip 2">BUTTON 2</button>
+        </div>      
+    </div>
+
+    <div id="taskSeven">
+        <ul class="tree" id="tree">
+            <li>this PC
+              <ul>
+                <li>Local Disc(C:)
+                  <ul>
+                    <li>Program Files</li>
+                    <li>Users</li>
+                    <li>Windows</li>
+                  </ul>
+                </li>
+                <li>Local Disc(D:)
+                  <ul>
+                    <li>New Folder 1</li>
+                    <li>New Folder 2</li>
+                    <li>New Folder 3</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+
+
+
+    
+
+
+
+
+
+    <script src="HM6.js"></script>
+</body>
+</html>

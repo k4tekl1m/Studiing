@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 60%;
+    height: 450px;
+    background-color: rgb(240, 240, 240);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    margin-bottom: 20px;
+}
+img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    float: left;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    /* padding: 10px; */
+}
+.first div{
+    display: flex;
+}
+.User{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+input, select{
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: rgb(240, 240, 240);
+    height: 30px;
+    margin-bottom: 10px;
+}
+.User input[type="text"]{
+    width: 100%;
+}
+.Personal input[type="text"]{
+    width: 100%;
+}
+.second{
+    width: 48%;
+    /* padding: 10px; */
+}
+.Personal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.one, .two{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.in_pass{
+    width: 80%;
+}
+.in_conf{
+    width: 43%;
+}
+.password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    line-height: 1.8em;
+    margin: auto;
+}
+.third input{
+    margin-bottom: 0;
+    height: 13px;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+input:focus{
+    outline: none;
+    border: 0px 0px 1px 0px gray;
+}
+label{
+    margin-left: 10px;
+}
+hr{
+    margin: 30px 0px 30px;
+
+}
+button{
+    padding: 10px 60px;
+    border: none;
+    background-color: lightseagreen;
+    color: white;
+    box-shadow: 1px 1px 5px gray;
+}
+@media screen and (max-width: 900px){
+    .container{
+        height: 630px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .first{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .second{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .container{
+        height: 850px;
+        flex-direction: column;
+    }
+    .password input{
+        width: 100%;
+        margin-left: 40px;
+    }
+    .password{
+        flex-wrap: wrap;
+    }
+    .pass{
+        width: 100%;
+    }
+    .in_pass{
+        margin-right: 0;
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    .Personal{
+        flex-direction: column;
+    }
+    .one, .two{
+        width: 100%;
+    }
+    label{
+        font-size: 14px;
+    }
+    .third{
+        margin-top: 0px;
+    }
+    
+}

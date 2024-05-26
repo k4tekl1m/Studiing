@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="sushi.css">
+    <title>Sushi</title>
+</head>
+<body>
+   <nav class="navbar navbar-expand bg-dark d-flex position-fixed top-0 col-12">
+    <div class="col-3 d-flex flex-row align-items-center justify-content-end">
+        <img src="nigiri.png" alt="" width="70" height="70">
+        <span class="text-light px-3 fs-5">Sushi Wok</span>
+    </div>
+    <div class="col-6 d-flex flex-row align-items-center justify-content-center navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Акции</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Контакты</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Доставка</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Вакансии</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-danger rounded-circle w-30 h-30 mx-3" type="button">
+            <img src="phone-call.png" alt="" width="20" height="28">
+        </button>
+        <span class="text-light ">Быстрый заказ</span>
+    </div>
+    </nav>
+    <div class="container m-auto">
+        <div class="row mt-4">
+            <div class="row fs-3 fw-bold d-flex justify-content-center vertical-align-center h-30 mt-5">
+                <span class="Head mb-5 mt-5 px-5 ">Оформление заказа</span>
+                <hr class="head mb-4">
+            </div>
+            <div class="col-6 d-flex flex-column px-5">
+                <div class="fs-5 d-flex justify-content-start fw-bold">
+                    Персональные данные
+                </div>
+                <div class="input-group d-flex flex-column mt-3 ">
+                    <input type="text" class="form-control-lg mt-3 w-100" placeholder="Имя" aria-label="Firstname">
+                </div>
+                <div class="input-group d-flex flex-column mt-4">
+                    <input type="text" class="form-control-lg w-100" placeholder="Адрес" aria-label="Firstname">
+                </div>
+                <div class="input-group d-flex flex-column mt-4">
+                    <input type="text" class="form-control-lg w-100" placeholder="Номер телефона" aria-label="Lastname">
+                </div>
+                <div class="input-group d-flex flex-column">
+                    <input type="text" class="form-control-lg mt-4 w-100" placeholder="Email" aria-label="Lastname">
+                </div>
+                <div class="col-12 d-flex flex-column p-0 mt-3">
+                    <label for="comment" class="fs-6 mb-1 mx-1">Дополнительный комментарий</label>
+                    <textarea name="comment" id="" cols="10" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="col-6 d-flex flex-column px-5">
+                <div class="fs-5 d-flex justify-content-start fw-bold">
+                    Параметры заказа
+                </div>
+                <div class="d-flex flex-column mt-1">
+                    <label for="stik" class="form-label mt-3 mb-1">Выберите палочки</label>
+                    <select id="stik" class="form-select form-select-lg" aria-label="Default select example">
+                        <option value="1">Обычные</option>
+                        <option value="2">Учебные</option>
+                    </select>
+                </div>
+                <div class="d-flex flex-column mt-2">
+                    <label class="mb-1" for="stik">Укажите количество палочек</label>
+                    <input id="stik" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example">
+                </div>
+                <div class="fs-6 mt-3">
+                    Класть салфетки?
+                </div>
+                <div class="d-flex flex-row mt-1">
+                    <span class="fw-bold">Нет</span>
+                    <div class="form-check form-switch mx-2">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    </div>
+                    <span class="fw-bold">Да</span>
+                </div>
+                <div class="d-flex flex-column mt-1">
+                    <label for="stik" class="form-label mt-1 mb-1">Выберите роллы</label>
+                    <select id="stik" class="form-select form-select" aria-label="Default select example">
+                        <option value="1">Вулкан</option>
+                        <option value="2">Сансей</option>
+                        <option value="3">Сатори</option>
+                        <option value="4">Филаделфия</option>
+                        <option value="5">Филаделфия L</option>
+                        <option value="6">Филаделфия XL</option>
+                        <option value="7">Гейша</option>
+                    </select>
+                </div>
+                <div class="col-12 m-auto">
+                    <button type="button" class="btn bg-danger text-light mt-3 w-100 p-3 fs-5 mb-5">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    margin: auto;
+    margin-top: 5%;
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    background-image: url('moon_flag.png');
+    background-color: 9FCDCD;
+    background-repeat: no-repeat;
+    background-position: 145% 170%;
+    background-size: 60% 80%;
+    border-radius: 20px;
+}
+.header{
+    width: 450px;
+    padding: 15px 10px 10px 30px;
+    background-color: DB6423;
+    margin: 20px;
+    position: relative;
+    left: -60px;
+    color: white !important;
+    font-weight: bold;
+}
+input{
+    width: 300px;
+    background-color: A9D2D2;
+    border-bottom: 1px solid rgb(115, 115, 115) !important;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.DateCVV input{
+    width: 80px;
+    margin-top: none !important;
+}
+.DateCVV input{
+    margin-right: 25px;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    width: 290px;
+    justify-content: space-between;
+    margin-top: 20px !important;
+}
+.name span:last-child{
+    margin-left: 30px;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    color: rgb(71, 101, 105);
+}
+
+span{
+    margin-bottom: 5px;
+}

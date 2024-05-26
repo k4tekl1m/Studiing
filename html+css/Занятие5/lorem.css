@@ -1,0 +1,20 @@
+div{
+    border: 1px solid black;
+    padding: 20px;
+}
+/* .block{
+    position: relative;
+    left: 50px;
+    top: 50px;
+} */
+/* .block{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20px;
+} */
+.block{
+    position: absolute;
+    left: 100;
+    top: 0;
+}
